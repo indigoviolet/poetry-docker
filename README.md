@@ -1,14 +1,14 @@
 
 # Table of Contents
 
-1.  [poetry-docker](#org2c41e30)
-2.  [Versions](#orgc7af493)
-3.  [References](#orgf17e744)
-4.  [Usage](#org56d1851)
-5.  [Local config](#orgf764add)
+1.  [poetry-docker](#orgee153d0)
+2.  [Versions](#orgeb8ada1)
+3.  [References](#orgedb28c0)
+4.  [Usage](#orgf071ea7)
+5.  [Local config](#orgd6fa390)
 
 
-<a id="org2c41e30"></a>
+<a id="orgee153d0"></a>
 
 # poetry-docker
 
@@ -19,7 +19,7 @@ Poetry dependencies into `requirements.txt` so that you don&rsquo;t have to do i
 yourself.
 
 
-<a id="orgc7af493"></a>
+<a id="orgeb8ada1"></a>
 
 # Versions
 
@@ -27,7 +27,7 @@ yourself.
     ARG POETRY_VERSION=1.1.4
 
 
-<a id="orgf17e744"></a>
+<a id="orgedb28c0"></a>
 
 # References
 
@@ -35,9 +35,11 @@ yourself.
 -   <https://stackoverflow.com/questions/53835198/integrating-python-poetry-with-docker>
 
 
-<a id="org56d1851"></a>
+<a id="orgf071ea7"></a>
 
 # Usage
+
+See [this example Dockerfile](https://github.com/indigoviolet/poetry-docker/blob/master/Dockerfile-test)
 
     
     FROM indigoviolet/poetry-docker:latest as requirements
@@ -52,7 +54,9 @@ yourself.
     RUN pip install -r requirements.txt
 
 
-<a id="orgf764add"></a>
+<a id="orgd6fa390"></a>
 
 # Local config
+
+We export on save to markdown so that Docker Hub will sync this, it expects `README.md`
 

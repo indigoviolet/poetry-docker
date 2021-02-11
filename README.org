@@ -21,6 +21,8 @@ ARG POETRY_VERSION=1.1.4
 
 * Usage
 
+See [[https://github.com/indigoviolet/poetry-docker/blob/master/Dockerfile-test][this example Dockerfile]]
+
 #+begin_src dockerfile
 
 FROM indigoviolet/poetry-docker:latest as requirements
@@ -39,6 +41,8 @@ RUN pip install -r requirements.txt
 
 
 * Local config
+
+We export on save to markdown so that Docker Hub will sync this, it expects ~README.md~
 
 # Local Variables:
 # after-save-hook: org-md-export-to-markdown

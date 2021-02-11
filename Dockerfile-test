@@ -1,0 +1,7 @@
+FROM indigoviolet/poetry-docker:latest AS requirements
+
+FROM python:3.8-slim-buster AS base
+
+WORKDIR /src
+COPY --from=requirements /src/requirements.txt .
+RUN cat requirements.txt
