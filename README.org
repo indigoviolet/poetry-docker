@@ -3,7 +3,7 @@
 
 Based on https://github.com/Docker-s-IMAGES/no-pypoetry
 
-This repo provides a multi-stage build image that automatically extracts your
+This repo provides a multi-stage build base image that automatically extracts your
 Poetry dependencies into ~requirements.txt~ so that you don't have to do it
 yourself.
 
@@ -37,3 +37,9 @@ RUN pip install -r requirements.txt
 #+end_src
 
 
+
+* Local config
+
+# Local Variables:
+# after-save-hook: org-md-export-to-markdown
+# End:
